@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color:#28d;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 900vh; 
+            margin: 0; /* Remove auto margin to move the form to the left */
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 1px;
+            margin-bottom: 30px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+            border: none; 
+        }
+
+        th.label {
+            width: 200px;
+            white-space: nowrap;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Jadwal</a>
+              <a class="nav-link" href="detail jadwal.html">Detail Jadwal</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <form>
+        <fieldset>
+            <legend>Seminar Proposal</legend>
+            <table>
+                <tr>
+                    <th class="label">NIM:</th>
+                    <td>0110223122</td>
+                    <th class="label">Pembimbing:</th>
+                    <td>Sirojul Munir S,SI. M.KOM</td>
+                </tr>
+                <tr>
+                    <th class="label">Nama:</th>
+                    <td>Deden Rafi Akbar</td>
+                    <th class="label">Penguji:</th>
+                    <td>Ahmad Rio M.SI</td>
+                </tr>
+                <tr>
+                    <th class="label">Prodi:</th>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <th class="label">Judul:</th>
+                    <td>Rancangan Bangun Aplikasi Seminar</td>
+                </tr>
+                <tr>
+                    <th class="label">Waktu:</th>
+                    <td>Senin, 4 Januari 2024, 08.00</td>
+                </tr>
+                <tr>
+                    <th class="label">Ruang:</th>
+                    <td>zoom</td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="button" onclick="submitForm()">Daftar Peserta</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            // You can add JavaScript code here to handle form submission
+            // For example, you can collect form data and send it to a server using AJAX
+            alert('Form submitted!');
+        }
+    </script>
+</body>
+</html>

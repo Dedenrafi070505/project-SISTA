@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Seminar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #28d;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800vh;
+            margin: 0;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: none; 
+        }
+
+        th.label {
+            width: 200px;
+            white-space: nowrap;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .Daftar-button {
+            display: block;
+            width: 100%;
+            background: #28d;
+            border-color: transparent;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .Daftar-button:hover {
+            background: #17c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="jadwal.html">Jadwal</a>
+              <a class="nav-link" href="Daftar seminar.html">Daftar Seminar</a>
+              <a class="nav-link" href="#">Berita
+            </div>
+          </div>
+        </div>
+      </nav> 
+    
+      <h5>Pendaftaran seminar berlaku untuk mahasiswa yang telah mendapatkan persetujuan dari Pembimbing TA</h5>
+    <form>
+        <fieldset>
+            <legend>Form Daftar Seminar TA</legend>
+            <table>
+                <tr>
+                    <th class="label">NIM:</th>
+                    <td><input type="number" name="nim"></td>
+                    <th class="label">Nama:</th>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <th class="label">Prodi:</th>
+                    <td>
+                        <select name="prodi">
+                            <option value="teknik_informatika">Teknik Informatika</option>
+                            <option value="sistem_informasi">Sistem Informasi</option>
+                        </select>
+                    </td>
+                    <th class="label">Tanggal Seminar:</th>
+                    <td><input type="date" name="tanggal_seminar"></td>
+                </tr>
+                <tr>
+                    <th class="label">Jam Seminar:</th>
+                    <td><input type="time" name="jam_seminar"></td>
+                    <th class="label">Ruangan:</th>
+                    <td><input type="text" name="ruangan"></td>
+                </tr>
+                <tr>
+                    <th class="label">Judul TA:</th>
+                    <td colspan="3"><input type="text" name="judul_ta"></td>
+                </tr>
+                <tr>
+                    <th class="label">Pembimbing:</th>
+                    <td><input type="text" name="pembimbing"></td>
+                    <th class="label">Penguji 1:</th>
+                    <td>
+                        <select name="Penguji 1">
+                            <option value="Ahmad_Rio M.SI">Ahmad Rio M.SI</option>
+                            <option value="Amalia_Rahmah M.T">Amalia Rahmah M.T</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="label">Penguji 2:</th>
+                    <td><select name="Penguji 2">
+                        <option value="Amalia_Rahmah M.T">Amalia Rahmah M.T</option>
+                        <option value="Ahmad_Rio M.SI">Ahmad Rio M.SI</option>
+                    </select></td>
+                </tr>
+            </table>
+        </fieldset>
+        <a class="Daftar-button" href="adminlte.html">Daftar</a>
+    </form>
+
+    <script>
+        function submitForm() {
+            alert('Form submitted!');
+        }
+    </script>
+</body>
+</html>
